@@ -36,7 +36,7 @@
       background:rgba(0,0,0,0.8); padding:2rem; margin:3rem 0;
       border:2px solid var(--neon); box-shadow:0 0 30px rgba(0,255,255,0.3);
     }
-    .video-grid, .shorts-grid {
+    .video-grid {
       display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap:1rem; margin-top:1rem;
     }
     .video-card {
@@ -50,9 +50,7 @@
       border:none; 
       border-radius:4px; 
     }
-    .short-card iframe { height:300px; } /* Taller for vertical shorts */
     .date { font-size:0.9rem; color:#ccc; }
-    .playlist-link { display:block; margin:1rem 0; color:var(--neon); text-align:center; }
     footer {
       text-align:center; padding:3rem; background:rgba(0,0,0,0.9); color:#666;
       border-top:2px solid var(--blood);
@@ -62,20 +60,8 @@
     @media (max-width:768px) {
       h1 {font-size:2.5rem;}
       iframe {height:150px;}
-      .short-card iframe {height:250px;}
     }
   </style>
-  <script>
-    // Simple sort function (runs on load) - sorts cards by 'data-date' desc (newest first)
-    window.addEventListener('load', () => {
-      const grids = document.querySelectorAll('.video-grid, .shorts-grid');
-      grids.forEach(grid => {
-        const cards = Array.from(grid.children);
-        cards.sort((a, b) => new Date(b.dataset.date) - new Date(a.dataset.date));
-        cards.forEach(card => grid.appendChild(card));
-      });
-    });
-  </script>
 </head>
 <body>
 <header>
@@ -103,70 +89,42 @@
     <h2 style="color:var(--neon); text-align:center; margin-bottom:1.5rem;">
       VIDEO VAULT: Chapters, Teasers & Demon Hunts
     </h2>
-    <a href="https://www.youtube.com/playlist?list=PLyourplaylistid" class="playlist-link" target="_blank">
-      → Full Playlist: Sorted by Story Arc (Auto-Updates)
+    <a href="https://www.youtube.com/@FatherKaelen" style="display:block; margin:1rem 0; color:var(--neon); text-align:center;" target="_blank">
+      → Full Channel: @FatherKaelen (Subscribe for Updates)
     </a>
-    <h3 style="color:var(--blood);">Full Videos (Sorted Newest First)</h3>
+    <h3 style="color:var(--blood);">Featured Videos</h3>
     <div class="video-grid">
-      <!-- Placeholder for future full video - e.g., Chapter 3 narration -->
-      <div class="video-card" data-date="2025-11-25">
-        <h4>Club Seraphim Showdown: Vampire vs. Father Chrome (Full Chapter Coming)</h4>
-        <div class="date">Nov 25, 2025</div>
-        <iframe src="https://www.youtube.com/embed/otCpCn0l4Wo" 
-                title="Teaser: Neon Hunt" 
-                allowfullscreen 
-                loading="lazy"
-                referrerpolicy="strict-origin-when-cross-origin"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share">
-        </iframe>
-        <p>Kaelen's full exorcism drops soon—holy spear through bat wings. (Add your full vid ID here)</p>
-      </div>
-      <!-- Placeholder for Chapter 1 full -->
-      <div class="video-card" data-date="2025-11-20">
-        <h4>The Monk’s Keys: Holy Tech & Haunted Ale (Full Audio Soon)</h4>
-        <div class="date">Nov 20, 2025</div>
-        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
-                title="Bar Banter Teaser" 
-                allowfullscreen 
-                loading="lazy"
-                referrerpolicy="strict-origin-when-cross-origin"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share">
-        </iframe>
-        <p>John Michael sparks the cruci-cannon—Marie Lu roasts. (Swap in your Chapter 1 ID)</p>
-      </div>
-    </div>
-    <h3 style="color:var(--blood); margin-top:2rem;">YouTube Shorts (Quick Demon Bites, Sorted Newest)</h3>
-    <div class="shorts-grid">
-      <!-- YOUR REAL SHORT: Patched in as newest (today's upload) -->
-      <div class="short-card video-card" data-date="2025-11-22">
-        <h4>Father Kaelen Slays a Demon #Shorts</h4>
+      <!-- Fixed Video 1: KemgUZQQ4wg -->
+      <div class="video-card" data-date="2025-11-22">
+        <h4>Neo Manila Chapter Teaser: The Hunt Begins</h4>
         <div class="date">Nov 22, 2025</div>
-        <iframe src="https://www.youtube.com/embed/D4qBcd87jLc?feature=oembed" 
-                title="Father Kaelen Demon Slay" 
+        <iframe src="https://www.youtube.com/embed/KemgUZQQ4wg" 
+                title="Neo Manila Teaser 1" 
                 allowfullscreen 
                 loading="lazy"
                 referrerpolicy="strict-origin-when-cross-origin"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share">
         </iframe>
-        <p>Holy violence in neon rain—#audiobook #horror #demonic. Watch the spear fly!</p>
-        <a href="https://youtube.com/shorts/D4qBcd87jLc" target="_blank" style="font-size:0.9rem;">→ Full Short on YouTube</a>
+        <p>Kaelen rides into the neon storm—demons stir in the shadows.</p>
+        <a href="https://youtu.be/KemgUZQQ4wg" target="_blank" style="font-size:0.9rem;">→ Watch on YouTube</a>
       </div>
-      <!-- Placeholder for next short (e.g., prologue howl) -->
-      <div class="short-card video-card" data-date="2025-11-18">
-        <h4>Blood Seal Howl: 1621 Demon Trap #NeoManilaShort</h4>
-        <div class="date">Nov 18, 2025</div>
-        <iframe src="https://www.youtube.com/embed/shorts/Ex9P38q3gMA" 
-                title="Prologue Teaser" 
+      <!-- Fixed Video 2: 3P_F7gIvJdc -->
+      <div class="video-card" data-date="2025-11-22">
+        <h4>Neo Manila Demon Slay: Holy Spear Strike</h4>
+        <div class="date">Nov 22, 2025</div>
+        <iframe src="https://www.youtube.com/embed/3P_F7gIvJdc" 
+                title="Neo Manila Teaser 2" 
                 allowfullscreen 
                 loading="lazy"
                 referrerpolicy="strict-origin-when-cross-origin"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share">
         </iframe>
-        <p>Latin rite shakes the earth—prophecy awakens. (Add your next short ID)</p>
+        <p>Father Chrome vs. the vampire—bat wings and blessed steel clash.</p>
+        <a href="https://youtu.be/3P_F7gIvJdc" target="_blank" style="font-size:0.9rem;">→ Watch on YouTube</a>
       </div>
     </div>
     <p style="text-align:center; margin-top:1rem; font-size:0.9rem; color:#ccc;">
-      New short just dropped! Upload more to @FatherKaelen & edit IDs here for auto-sort.
+      More chapters and shorts coming soon—subscribe on YouTube!
     </p>
   </div>
   <div class="prologue">
