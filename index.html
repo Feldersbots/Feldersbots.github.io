@@ -3,80 +3,150 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>NEO MANILA | John Michaelson</title>
+  <title>NEO MANILA | Father Kaelen</title>
   <meta name="description" content="Cyberpunk exorcist priest in 2056 Manila. Audiobooks, holy violence, and neon redemption."/>
   <style>
-    :root {--blood:#c41e3a;--neon:#00ffff;--dark:#0b0c10;--gray:#1f2833;}
-    body {margin:0;padding:0;background:var(--dark);color:#eee;font-family:'Courier New',monospace;line-height:1.6;
-      background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url('https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&auto=format&fit=crop&q=80');
-      background-attachment:fixed;background-size:cover;}
-    header {background:rgba(0,0,0,0.85);text-align:center;padding:4rem 1rem;border-bottom:4px solid var(--blood);}
-    h1 {font-size:3.5rem;margin:0;color:var(--neon;text-shadow:0 0 20px var(--neon);letter-spacing:8px;}
-    .tagline {font-size:1.4rem;color:#ccc;margin-top:1rem;}
-    .container {max-width:1000px;margin:2rem auto;padding:0 1rem;}
-    .prologue {background:rgba(20,0,0,0.7);padding:2rem;border-left:6px solid var(--blood);margin:3rem 0;font-size:1.15rem;box-shadow:0 0 30px rgba(196,30,58,0.4);}
-    .videos {display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:2rem;margin:3rem 0;}
-    .video-card {background:var(--gray);padding:1.5rem;border-radius:10px;text-align:center;box-shadow:0 0 20px rgba(0,255,255,0.2);}
-    iframe {width:100%;height:315px;border:none;border-radius:8px;}
-    footer {text-align:center;padding:3rem;background:rgba(0,0,0,0.9);color:#666;border-top:2px solid var(--blood);}
-    a {color:var(--neon);text-decoration:none;}
+    :root {
+      --blood: #c41e3a;
+      --neon: #00ffff;
+      --dark: #0b0c10;
+      --gray: #1f2833;
+    }
+    body {
+      margin:0; padding:0; background:var(--dark); color:#eee;
+      font-family: 'Courier New', monospace; line-height:1.6;
+      background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&auto=format&fit=crop&q=80');
+      background-attachment:fixed; background-size:cover;
+    }
+    header {
+      background:rgba(0,0,0,0.85); text-align:center; padding:4rem 1rem;
+      border-bottom:4px solid var(--blood);
+    }
+    h1 {
+      font-size:3.5rem; margin:0; color:var(--neon); text-shadow:0 0 20px var(--neon);
+      letter-spacing:8px;
+    }
+    .tagline {font-size:1.4rem; color:#ccc; margin-top:1rem;}
+    .container {max-width:1000px; margin:2rem auto; padding:0 1rem;}
+    .prologue {
+      background:rgba(20,0,0,0.7); padding:2rem; border-left:6px solid var(--blood);
+      margin:3rem 0; font-size:1.15rem; box-shadow:0 0 30px rgba(196,30,58,0.4);
+    }
+    .video-vault {
+      background:rgba(0,0,0,0.8); padding:2rem; margin:3rem 0;
+      border:2px solid var(--neon); box-shadow:0 0 30px rgba(0,255,255,0.3);
+    }
+    .video-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap:1rem; margin-top:1rem;
+    }
+    .video-card {
+      background: var(--gray); padding:1rem; border-radius:8px; text-align:center;
+      box-shadow: 0 0 15px rgba(0,255,255,0.2); transition: transform 0.3s;
+    }
+    .video-card:hover { transform: scale(1.05); }
+    iframe { 
+      width:100%; 
+      height:200px; 
+      border:none; 
+      border-radius:4px; 
+    }
+    .date { font-size:0.9rem; color:#ccc; }
+    footer {
+      text-align:center; padding:3rem; background:rgba(0,0,0,0.9); color:#666;
+      border-top:2px solid var(--blood);
+    }
+    a {color:var(--neon); text-decoration:none;}
     a:hover {text-decoration:underline;}
-    @media (max-width:768px){h1{font-size:2.5rem;}iframe{height:200px;}}
+    @media (max-width:768px) {
+      h1 {font-size:2.5rem;}
+      iframe {height:150px;}
+    }
   </style>
 </head>
 <body>
-
 <header>
   <h1>NEO MANILA</h1>
   <p class="tagline">2056. When steel rides and neon burns, the blood demon shall awaken.</p>
-  <p style="margin-top:2rem;font-size:1.3rem;color:#c41e3a;">An audiobook series by John Michaelson</p>
+  <p style="margin-top:2rem; font-size:1.3rem; color:#c41e3a;">
+    An audiobook series by Father Kaelen
+  </p>
 </header>
-
 <div class="container">
-
   <div class="prologue">
-    <h2 style="color:var(--blood);text-align:center;">Prologue – The Blood Seal</h2>
+    <h2 style="color:var(--blood); text-align:center;">Prologue – The Blood Seal</h2>
     <p><strong>INTRAMUROS Manila, sixteen twenty one.</strong><br>
-    The convent burned like a candle offered to heaven. Father Ignatius de Alonzo staggered through the smoke…<br><br>
+    The convent burned like a candle offered to heaven.<br>
+    Father Ignatius de Alonzo staggered through the smoke, cassock torn, a silver cross clutched in one trembling hand. The air smelled of salt, blood, and gunpowder — the scent of a world being unmade.<br><br>
+    Behind him, the demon howled from its prison of iron and prayer. The Jesuits had trapped it beneath the foundations of Intramuros, a creature of famine and deceit that had devoured half a province before the Inquisition arrived. The others were dead; only Ignatius remained to finish the seal.<br><br>
+    He dropped to his knees before the altar stone. Latin spilled from his cracked lips as he carved symbols into the marble with a knife made from a saint’s rib. When the final word of the rite was spoken, he pressed his palm to the wound on his chest and let his blood fill the grooves.<br><br>
+    <strong>“Sanctus ignis, custodi hoc civitatem…”</strong><br>
+    Holy fire, guard this city.<br><br>
+    The earth shook. The walls screamed. Light burst upward like dawn beneath the sea — and then silence.<br><br>
+    The demon was gone, bound beneath Manila forever. But as Ignatius collapsed beside the dying flame, he whispered a warning that would echo through centuries:<br><br>
     <em>“When steel rides and neon burns, the blood demon shall awaken.”</em>
   </div>
-
-  <div class="videos">
-    <div class="video-card">
-      <iframe src="https://www.youtube.com/embed/KemgUZQQ4wg" 
-              title="Neo Manila – The Ride Begins" 
-              allowfullscreen 
-              loading="lazy"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allow="accelerometer; autoplay clipboard-write encrypted-media gyroscope picture-in-picture web-share">
-      </iframe>
-      <p style="margin-top:1rem;">The Hunt Begins</p>
+  <div class="video-vault">
+    <h2 style="color:var(--neon); text-align:center; margin-bottom:1.5rem;">
+      VIDEO VAULT: Chapters, Teasers & Demon Hunts
+    </h2>
+    <a href="https://www.youtube.com/@FatherKaelen" style="display:block; margin:1rem 0; color:var(--neon); text-align:center;" target="_blank">
+      → Full Channel: @FatherKaelen (Subscribe for Updates)
+    </a>
+    <h3 style="color:var(--blood);">Featured Videos</h3>
+    <div class="video-grid">
+      <!-- Fixed Video 1: KemgUZQQ4wg -->
+      <div class="video-card" data-date="2025-11-22">
+        <h4>Neo Manila Chapter Teaser: The Hunt Begins</h4>
+        <div class="date">Nov 22, 2025</div>
+        <iframe src="https://www.youtube.com/embed/KemgUZQQ4wg" 
+                title="Neo Manila Teaser 1" 
+                allowfullscreen 
+                loading="lazy"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share">
+        </iframe>
+        <p>Kaelen rides into the neon storm—demons stir in the shadows.</p>
+        <a href="https://youtu.be/KemgUZQQ4wg" target="_blank" style="font-size:0.9rem;">→ Watch on YouTube</a>
+      </div>
+      <!-- Fixed Video 2: 3P_F7gIvJdc -->
+      <div class="video-card" data-date="2025-11-22">
+        <h4>Neo Manila Demon Slay: Holy Spear Strike</h4>
+        <div class="date">Nov 22, 2025</div>
+        <iframe src="https://www.youtube.com/embed/3P_F7gIvJdc" 
+                title="Neo Manila Teaser 2" 
+                allowfullscreen 
+                loading="lazy"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share">
+        </iframe>
+        <p>Father Chrome vs. the vampire—bat wings and blessed steel clash.</p>
+        <a href="https://youtu.be/3P_F7gIvJdc" target="_blank" style="font-size:0.9rem;">→ Watch on YouTube</a>
+      </div>
     </div>
-
-    <div class="video-card">
-      <iframe src="https://www.youtube.com/embed/3P_F7gIvJdc" 
-              title="Neo Manila – Demon Slay" 
-              allowfullscreen 
-              loading="lazy"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share">
-      </iframe>
-      <p style="margin-top:1rem;">Holy Spear vs. Vampire</p>
-    </div>
+    <p style="text-align:center; margin-top:1rem; font-size:0.9rem; color:#ccc;">
+      More chapters and shorts coming soon—subscribe on YouTube!
+    </p>
   </div>
-
+  <div class="prologue">
+    <h2 style="color:var(--blood); text-align:center;">Chapter 1 – The Keys of the Monk</h2>
+    <p><em>Neo-Manila, 2056.</em><br>
+    Rain hissed against the neon streets like static.<br>
+    Inside The Monk’s Keys, the world felt older — wood, brass, and the comforting smell of malt instead of ozone…</p>
+    <p>Brother John Michael soldered sparks between his gloved fingers. Padre Kaelen Valerio — “Father Chrome” — pulled on his black armor beneath a priest’s collar.</p>
+    <p>Marie Lu poured consecrated ale and threatened both of them with eternal dish-washing duty if they blew up her bar again.</p>
+    <p>And somewhere in the crimson night, something ancient began to remember its promise.</p>
+    <p><a href="https://www.youtube.com/@FatherKaelen" style="color:var(--neon);">→ Listen to the full chapter on YouTube</a></p>
+  </div>
 </div>
-
 <footer>
-  <p>© 2025 John Michaelson | Neo Manila Audiobook Series</p>
+  <p>© 2025 Father Kaelen | Neo Manila Audiobook Series</p>
   <p>
     <a href="https://www.youtube.com/@FatherKaelen" target="_blank">YouTube</a> •
-    Contact: <a href="mailto:feltronium@gmail.com">feltronium@gmail.com</a>
+    Contact: fatherkaelen@proton.me
   </p>
-  <p style="font-size:0.8rem;color:#444;">
+  <p style="font-size:0.8rem; color:#444;">
     “When steel rides and neon burns, the blood demon shall awaken.”
   </p>
 </footer>
-
 </body>
 </html>
